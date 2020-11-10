@@ -1,0 +1,15 @@
+ul.ant-menu {
+  padding-left: 360px;
+}
+span,
+svg {
+  color: #24292e;
+}
+.ant-menu-item-active {
+  border-bottom: 2px solid #d1d5da !important;
+  color: #d1d5da !important;
+}
+.ant-menu-item-selected {
+  border-bottom: 2px solid #f9826c !important;
+  color: #f9826c !important;
+}

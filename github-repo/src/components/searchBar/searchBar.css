@@ -1,0 +1,16 @@
+input.ant-input.searchbar {
+  width: 530px;
+}
+.LanguageButton,
+.TypeButton,
+.NewRepoButton {
+  margin-left: 8px;
+}
+Button.ant-btn.NewRepoButton {
+  background-color: #2ea44f;
+  border-color: white;
+}
+span.bookOutlined > svg,
+.New {
+  color: white;
+}

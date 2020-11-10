@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  /*text-align: center;*/
+}
+
+.wrapper > * {
+  /*padding: 10px;
+  margin: 10px;*/
+  flex: 1 100%;
+  border-radius: 10;
+}
+
+.main {
+  /*text-align: center;
+  background: deepskyblue;*/
+  height: 600px;
+
+  font-size: 24px;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3;
+    order: 2;
+  }
+  .aside1 {
+    order: 1;
+  }
+
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+    flex-basis: 3px;
+  }
+}

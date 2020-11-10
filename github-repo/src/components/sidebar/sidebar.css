@@ -1,0 +1,19 @@
+.ant-avatar {
+  margin-top: -20px !important;
+}
+aside {
+  margin-left: 55px !important;
+}
+hr {
+  margin-top: -20px !important;
+}
+.FollowButton {
+  background-color: #f3f4f6;
+  border-color: rgb(27 31 35 / 15%);
+  width: 200px;
+}
+.pointsButton {
+  background-color: #f3f4f6;
+  border-color: rgb(27 31 35 / 15%);
+  margin-left: 8px;
+}
