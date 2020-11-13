@@ -60,7 +60,11 @@ class RepoList extends React.Component {
                     key="list-vertical-star-o"
                   />,
                   <IconText
-                    text={moment(item.node.updatedAt).fromNow()}
+                    text={
+                      <p data-testid="updatedAt">
+                        {moment(item.node.updatedAt).fromNow()}
+                      </p>
+                    }
                     key="list-vertical-like-o"
                   />,
                 ]}
@@ -72,8 +76,14 @@ class RepoList extends React.Component {
                 }
               >
                 <List.Item.Meta
-                  title={<a href={item.node.url}>{item.node.name}</a>}
-                  description={item.node.description}
+                  title={
+                    <a data-testid="repoName" href={item.node.url}>
+                      {item.node.name}
+                    </a>
+                  }
+                  description={
+                    <p data-testid="description">{item.node.description}</p>
+                  }
                 />
                 <div></div>
               </List.Item>

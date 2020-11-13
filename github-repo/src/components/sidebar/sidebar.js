@@ -9,27 +9,34 @@ class Sidebar extends React.Component {
     return (
       <aside className="aside aside1">
         <Avatar
+          data-testid="avatarUrl"
           className="profilePicture"
           size={250}
           src={this.props.avatarUrl}
         />
-        <h1>{this.props.name}</h1>
-        <h2>{this.props.login}</h2>
-        <h3>{this.props.bio}</h3>
+        <h1 data-testid="name">{this.props.name}</h1>
+        <h2 className="login" data-testid="login">
+          {this.props.login}
+        </h2>
+        <h3 data-testid="bio">{this.props.bio}</h3>
         <Button className="FollowButton">Follow</Button>
         <Button className="pointsButton">...</Button>
         <br />
         <br />
         <UserOutlined />
         &nbsp;
-        <b>{this.props.nbFollowers}</b>&nbsp;followers&nbsp;.&nbsp;
-        <b>{this.props.nbFollowing}</b>&nbsp;following&nbsp;.&nbsp;
+        <b data-testid="nbFollowers">{this.props.nbFollowers}</b>
+        &nbsp;followers&nbsp;.&nbsp;
+        <b data-testid="nbFollowing">{this.props.nbFollowing}</b>
+        &nbsp;following&nbsp;.&nbsp;
         <StarOutlined />
         &nbsp;
-        <b>{this.props.nbStarredRepositories}</b>
+        <b data-testid="nbStarredRepositories">
+          {this.props.nbStarredRepositories}
+        </b>
         <br />
         <br />
-        <h4>
+        <h4 data-testid="email">
           <MailOutlined />
           &nbsp;{this.props.email}
         </h4>

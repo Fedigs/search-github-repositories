@@ -18,9 +18,9 @@ class Main extends React.Component {
   };
 
   componentDidMount() {
+    //get user informations from the User service
     get_User_Informations()
       .then((res) => {
-        console.log(res.data.data.user);
         this.setState({
           login: res.data.data.user.login,
           name: res.data.data.user.name,

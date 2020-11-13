@@ -20,7 +20,7 @@ svg {
   border-radius: 45%;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 834px) {
   ul.ant-menu.ant-menu-light.ant-menu-root.ant-menu-horizontal,
   li.ant-menu-submenu.ant-menu-submenu-horizontal.ant-menu-overflowed-submenu {
     margin-left: -360px !important;

@@ -2,14 +2,18 @@ import React from "react";
 import "./header.css";
 
 import { Menu } from "antd";
-import { ReadOutlined, BookOutlined, ProjectOutlined } from "@ant-design/icons";
+import {
+  ReadOutlined,
+  BookOutlined,
+  ProjectOutlined,
+  CodeSandboxOutlined,
+} from "@ant-design/icons";
 class Header extends React.Component {
   state = {
     current: "Repositories",
   };
 
   handleClick = (e) => {
-    console.log("click ", e);
     this.setState({ current: e.key });
   };
   render() {
@@ -28,6 +32,9 @@ class Header extends React.Component {
           <span className="totalCountdot">{this.props.totalCount}</span>
         </Menu.Item>
         <Menu.Item key="Projects" icon={<ProjectOutlined />}>
+          Projects
+        </Menu.Item>
+        <Menu.Item key="Packages" icon={<CodeSandboxOutlined />}>
           Projects
         </Menu.Item>
       </Menu>
