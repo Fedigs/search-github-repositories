@@ -13,3 +13,31 @@ svg {
   border-bottom: 2px solid #f9826c !important;
   color: #f9826c !important;
 }
+.totalCountdot {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(209 213 218 / 50%);
+  border-radius: 45%;
+}
+
+@media all and (max-width: 600px) {
+  ul.ant-menu.ant-menu-light.ant-menu-root.ant-menu-horizontal,
+  li.ant-menu-submenu.ant-menu-submenu-horizontal.ant-menu-overflowed-submenu {
+    margin-left: -360px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .ant-menu-item {
+    text-align: center !important;
+  }
+  span.ant-avatar.ant-avatar-circle.ant-avatar-image.profilePicture {
+    margin-top: 20px !important;
+    height: 180px !important;
+    width: 180px !important;
+  }
+  body {
+    text-align: center !important;
+  }
+}

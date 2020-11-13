@@ -1,3 +1,11 @@
 .ant-list-item-meta-title > a {
   color: #0366d6 !important;
 }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: inline-block;
+}

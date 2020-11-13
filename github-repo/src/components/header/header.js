@@ -3,8 +3,6 @@ import "./header.css";
 
 import { Menu } from "antd";
 import { ReadOutlined, BookOutlined, ProjectOutlined } from "@ant-design/icons";
-
-const { SubMenu } = Menu;
 class Header extends React.Component {
   state = {
     current: "Repositories",
@@ -26,7 +24,8 @@ class Header extends React.Component {
           Overview
         </Menu.Item>
         <Menu.Item key="Repositories" icon={<BookOutlined />}>
-          Repositories
+          Repositories&nbsp;
+          <span className="totalCountdot">{this.props.totalCount}</span>
         </Menu.Item>
         <Menu.Item key="Projects" icon={<ProjectOutlined />}>
           Projects
