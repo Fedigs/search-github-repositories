@@ -3,7 +3,7 @@ import axios from "axios";
 const base_url = "https://api.github.com/graphql";
 
 const github_data = {
-  token: "a63e79f5f9a2ad0f0aa829bf0a78b3d4436bc519",
+  token: "0179379129a3628c9e62e8073efb16af1974900c",
   username: "Fedigs",
 };
 
